@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./output.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+</head>
+<body>
+
+    <header class="header py-5">
+        <div class="container">
+            <div class="headerWrapper flex items-center justify-between">
+
+                <div class="headerLogo">
+                    <h2 class="text-secondary  font-bold text-[2rem]">Physionic</h2>
+                </div>
+                <div class="headerNav hidden md:block">
+                    <ul class="flex gap-5">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Product</a></li>
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="getAQoute hidden md:block">
+                    <a class="bg-primary p-3 rounded-md text-white font-semibold" href="#">Get a Qoute Now</a>
+                </div>
+                <div class="flex gap-5 md:hidden">
+                    <div class="searchAndCart flex gap-6">
+                        <i class="fa-solid fa-magnifying-glass text-darkGray text-2xl"></i>
+                        <i class="fa-solid fa-cart-shopping text-darkGray text-2xl"></i>
+                    </div>
+                    <div class="toggleMenu cursor-pointer">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+            <div class="headerMobileNav transition-all duration-500">
+                <ul class="text-center text-[1.5rem] text-darkGray font-semibold py-5">
+                    <li><a class="block p-3" href="#">Home</a></li>
+                    <li><a class="block p-3" href="#">Product</a></li>
+                    <li><a class="block p-3" href="#">Pricing</a></li>
+                    <li><a class="block p-3" href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <section class="banner bg-blend-multiply bg-cover bg-no-repeat bg-darkGray bg-[url('/img/hero-cover.jpg')] py-10 text-center">
+        <div class="container">
+            <div class="bannerWrapper lg:flex">
+
+            
+                <div>
+                    <h1 class="text-huge text-white font-semibold mb-6">Meet the Best Hospital</h1>
+                    <p class="text-white mb-6 w-[70%] mx-auto">We know how large objects will act, but things on a small scale.</p>
+                    <a class="bg-primary mb-6 inline-block px-5 py-3 rounded-full text-white font-semibold" href="#">Get a Qoute Now</a> <br>
+                    <a class="bg-transparent border border-white  inline-block px-5 py-3 rounded-full text-white font-semibold" href="#">Learn More</a>
+                </div>
+
+                <div class="bannerForm text-left bg-white p-10 rounded-lg w-[350px] my-10 mx-auto">
+                    <h3 class="text-center">Book Appointment</h3>
+                    <form action="">
+
+                        <div class="inputGroup mb-3">
+                            <label  for="">Name</label> <br>
+                            <input class="p-3 w-full" type="text" placeholder="Fullname">
+                        </div>
+
+                        <div class="inputGroup mb-3">
+                            <label  for="">Email</label> <br>
+                            <input class="p-3 w-full" type="email" placeholder="example@gmail.com">
+                        </div>
+
+                        <div class="inputGroup mb-3">
+                            <label  for="">Department</label> <br>
+                            <input class="p-3 w-full" type="text" placeholder="Fullname">
+                        </div>
+
+                        <div class="inputGroup mb-3">
+                            <label  for="">Time</label> <br>
+                            <input class="p-3 w-full" type="text" placeholder="Fullname">
+                        </div>
+
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <script>
+
+        const toggleMenu = document.querySelector('.toggleMenu');
+        const headerMobileNav = document.querySelector('.headerMobileNav');
+
+        toggleMenu.addEventListener('click', ()=>{
+            headerMobileNav.classList.toggle('active');
+        })
+
+    </script>
+
+</body>
+</html>
